@@ -1,23 +1,25 @@
-import logo from './logo.svg';
+import { Link } from 'react-router-dom';
 import './App.css';
-
+//import Container from '@material-ui/core/Container';
+import image1 from './Image-Set/Banner.jpg'
+import Navbar from './Navbar/Navbar'
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar></Navbar>
+    <div className="container-fluid">
+    
+        
+        <h1 className="text-center">Browse Some of the Suppliments from my online store</h1>
+        <div className="container">
+        <Link to="/shopping">
+        <img src ={image1} ></img>
+        </Link>
+       </div>
+
+       
+ 
+    </div>
     </div>
   );
 }

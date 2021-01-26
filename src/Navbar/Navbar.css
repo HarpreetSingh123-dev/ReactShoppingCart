@@ -1,0 +1,11 @@
+.Navbar nav {
+  height: auto;
+}
+
+.Navbar .nav-link {
+  color: whitesmoke;
+}
+
+.Navbar .navbar-collapse a {
+  margin-right: 30px;
+}

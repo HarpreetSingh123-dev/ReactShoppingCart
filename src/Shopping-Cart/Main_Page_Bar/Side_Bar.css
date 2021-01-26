@@ -1,0 +1,9 @@
+.menustyle hr {
+  background-color: white;
+  height: 2px;
+}
+
+.menustyle p:hover {
+  border: 2px solid red;
+  margin: 0%;
+}
