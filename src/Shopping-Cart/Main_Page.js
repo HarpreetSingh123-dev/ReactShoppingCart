@@ -283,7 +283,7 @@ particularProductDescription(id,name,description,img,price){
        if(!category){
 
         a = (
-            <div>
+            <div className="pgset" >
                <LowerSelectBarOne selectSort={this.sorting.bind(this)}
             
             
@@ -311,7 +311,8 @@ particularProductDescription(id,name,description,img,price){
 
             }
             </div>
-            
+            <div className="paginationSet">
+            <div className="container">
             <nav aria-label="Page navigation example"  >
                   <ul class="pagination"  >
  
@@ -320,7 +321,8 @@ particularProductDescription(id,name,description,img,price){
                      })}
                   </ul>
              </nav>
-
+             </div>
+             </div>
              </div>
 
             )
@@ -330,7 +332,7 @@ particularProductDescription(id,name,description,img,price){
        else if(category) {
 
         a = (
-            <div>
+            <div className="pgset">
              <LowerSelectBarTwo   selectSort={this.sorting.bind(this)}  
                                   set={this.state.cat}
              ></LowerSelectBarTwo>
@@ -390,20 +392,18 @@ particularProductDescription(id,name,description,img,price){
     
            
            
-           <div>
           
-          </div>
             <div className="container-fluid"> 
            
             
-            <div> 
+            
               
                   {a}
                      {/*  <Link to="/Cart"><button>Go To Cart</button></Link>*/}
                      {/*console.log(this.state)*/}
                      {/*console.log(this.state.catList)*/}
                      {/* <button onClick={this.byCategory.bind(this)}> only whey</button>*/}
-            <div>
+           
                  
                 
                 { /*
@@ -411,8 +411,8 @@ particularProductDescription(id,name,description,img,price){
                <button> {renderPageNumbers}</button>
                 </ul> */}
 
-            </div>
-            </div>
+            
+            
             </div>
             </div>
         );

@@ -1,4 +1,4 @@
-.card {
+.productDisp .card {
   border: 2px solid black;
   width: 280px;
   height: auto;
@@ -9,7 +9,7 @@
   margin-top: 20px; /* Added */
 }
 
-.center {
+.productDisp .center {
   display: block;
   margin-left: auto;
   margin-right: auto;

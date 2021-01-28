@@ -1,8 +1,14 @@
-.Main_Page .container-fluid {
-  width: 100%;
+.pgset .row .col {
+  position: relative;
+  left: 13%;
 }
 
 /*  */
+
+.paginationSet .container {
+  display: flex;
+  justify-content: center;
+}
 #page-wrap {
   text-align: center;
 

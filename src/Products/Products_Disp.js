@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom'
 
 function Products_Disp(props) {
     return (
-        <div>
+        <div className="productDisp">
             
              <div className="col">
              
