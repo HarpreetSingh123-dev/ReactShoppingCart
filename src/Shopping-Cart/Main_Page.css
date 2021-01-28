@@ -3,6 +3,10 @@
   left: 13%;
 }
 
+.pgset .row {
+  left: 10px;
+}
+
 /*  */
 
 .paginationSet .container {
