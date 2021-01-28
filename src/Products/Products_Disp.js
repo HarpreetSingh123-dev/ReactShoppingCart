@@ -15,9 +15,10 @@ function Products_Disp(props) {
                   
                   <div className="card-body">
         
-                      <h5 className="card-title text-center">{props.name}</h5>
+                      <h5 className="card-title text-center text-truncate">{props.name}</h5>
+                     
                       <p>Price: {props.price} Rs</p>
-                      <p className="card-text ">{props.description}</p>
+                      <p className="card-text text-truncate">{props.description}</p>
                       
                       <div>
                       <button  onClick={() => props.addfunc( props.id,props.name,props.description,props.img,props.price,{units:1} )} data-toggle="modal" data-target="#exampleModal" class="btn btn-primary"  >Add To Cart</button>

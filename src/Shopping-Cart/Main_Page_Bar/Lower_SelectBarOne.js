@@ -10,7 +10,7 @@ function Lower_Bar(props) {
  
                   <div class="form-group">
                  
-                    <label><b>Sort By:  </b></label>
+                    <label><b>Sort By: &nbsp;</b></label>
                 
                        <select class="form-select" aria-label="Default select example" onChange={props.selectSort} >
                
