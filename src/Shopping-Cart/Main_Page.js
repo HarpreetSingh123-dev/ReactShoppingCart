@@ -166,11 +166,11 @@ class Main_Page extends Component {
 
   }
 ///////////////////Below function is used to show products of particular category selected at front end///    
-    byCategory(event){
+    byCategory(category){
      
       this.setState({cat:true})
       this.setState({catList:[]})
-      this.setState({category: event.target.value})
+      this.setState({category: category})
       
 
       
@@ -179,7 +179,7 @@ class Main_Page extends Component {
 
       filtered = listOfProducts.filter( (e)=>{
 
-          return e.category === event.target.value
+          return e.category === category
 
       })
 
@@ -285,6 +285,7 @@ particularProductDescription(id,name,description,img,price,about,subdescription)
         a = (
             <div className="pgset" >
                <LowerSelectBarOne selectSort={this.sorting.bind(this)}
+                                  
             
             
                ></LowerSelectBarOne>

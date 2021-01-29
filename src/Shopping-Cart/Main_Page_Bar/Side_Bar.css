@@ -4,6 +4,5 @@
 }
 
 .menustyle p:hover {
-  border: 2px solid red;
-  margin: 0%;
+  font-weight: 600;
 }

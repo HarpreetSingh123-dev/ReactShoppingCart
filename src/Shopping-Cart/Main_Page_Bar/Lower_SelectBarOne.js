@@ -1,13 +1,16 @@
 import React from 'react';
 import './Lower_SelectBarOne.css'
 
+
 function Lower_Bar(props) {
     return (
         
          <div className="lowerbarone">
 
                <nav class="nav justify-content-end">
- 
+               <div class="left_nav">   
+               <a>HOME</a>
+               </div>
                   <div class="form-group">
                  
                     <label><b>Sort By: &nbsp;</b></label>
