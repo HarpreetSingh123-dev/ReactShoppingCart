@@ -5,8 +5,12 @@ const cartProducts = [
       description:"Made From Finest Quality of Amino Acids",
       img:"https://cdn.shopify.com/s/files/1/1618/2767/products/Essentials_BCAA_30serve_caps_1024x1024.jpg?v=1542062133",
       price:40,
-      category:"Bcaa"
+      category:"Bcaa",
+      about:["Supports Lean Mass Growth", "Reduces Muscle Breakdown" , "Increases Protein Synthesis"],
+      subdescription:{"Flavour" : "No Flavour" , "Ingredients" : "BCAA" , "Brand" : "Muscle Pharma" , "AgeRange" : "Adult", "ItemWeight": "400 grams"}
   
+     //about:"Supports Lean Mass Growth",
+     //subdescription:"No Flavour"
     },
   
     {

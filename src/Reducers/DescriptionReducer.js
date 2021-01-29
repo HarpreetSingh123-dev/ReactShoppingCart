@@ -19,8 +19,10 @@ console.log('indescription')
   var description = action.payload.description
   var img = action.payload.img
   var price = action.payload.price
+  var about = action.payload.about
+  var subdescription = action.payload.subdescription
 
-  var finalProduct ={id,name,description,img,price}
+  var finalProduct ={id,name,description,img,price,about,subdescription}
 
   console.log("final product is "+ finalProduct.name)
 

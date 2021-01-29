@@ -9,8 +9,6 @@ import {bindActionCreators} from 'redux'
 import descriptionAction from '../../Actions/productDescriptionAction'
 
 
-var id = null
-
 
 class Product_Description extends Component {
    
@@ -25,7 +23,9 @@ class Product_Description extends Component {
             name:'',
             image:'',
             description:'',
-            price:''
+            price:'',
+            about:[],
+            subdescription:[]
 
         }
 
@@ -48,30 +48,81 @@ class Product_Description extends Component {
       var description = pdt.description
       var image = pdt.img
       var price = pdt.price
+      var about = pdt.about
+      var subdescription = pdt.subdescription
     
       this.setState({
+         
          id:id,
          name:name,
          image:image,
          description:description,
-         price:price
+         price:price,
+         about:about,
+         subdescription:subdescription
 
       })
+
+   //var a = this.state.about.map( (abt)=>{
+
+     //    return <p>abt</p>
+   //  })
+
+     // this.state.subdescription.map( (subdes)=>{
+
+
+     // })
+
+
   
     }
 
-  show(){
-
-    console.log(this.state)
-  }
+ 
     render() {
+
+      var a = null
+
 
         
         return (
             <div>
-                <h1>Booooooooo</h1>
-                <button onClick={this.show.bind(this)}>Show</button>
-              {console.log(this.state)}
+                <h1>Product Description</h1>
+               {/* <button onClick={this.show.bind(this)}>Show</button>*/}
+               <img src={this.state.image}></img>
+               <p>{this.state.name}</p>
+               <p>{this.state.description}</p>
+               <p>{this.state.price}</p>
+              
+              
+
+               {this.state.about.map( (abt)=>{
+
+                   return   <p><b>{abt}</b></p>
+               })}
+
+               {/*this.state.subdescription.map( (subdes)=>{
+
+                   return <p>{subdes.Flavour}</p>
+               })*/}
+
+               {
+                 Object.keys(this.state.subdescription).map((subdes)=>{
+  
+                     return <div>
+
+                       <p>{subdes.Flavour}</p>
+                      {/* <p>{subdes.Ingredients}</p>
+                       <p>{subdes.Brand}</p>
+                       <p>{subdes.AgeRange}</p>
+                 <p>{subdes.ItemWeight}</p>*/ }
+                      </div>
+
+                 })
+               }
+         
+           
+             {console.log(this.state)}
+             {console.log(this.state.subdescription)}
                
             </div>
         );

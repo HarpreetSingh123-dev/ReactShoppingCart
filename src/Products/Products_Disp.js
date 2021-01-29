@@ -10,7 +10,7 @@ function Products_Disp(props) {
              
              <div className="card">
           
-             <Link to={`/Description/${props.id}`}>   <img src={props.img} onClick={()=>props.paricularProductDescription(props.id,props.name,props.description,props.img,props.price)} style={{width: 12 +"rem", height : 12 +"rem"}} className="card-img-top center" alt="..."></img>
+             <Link to={`/Description/${props.id}`}>   <img src={props.img} onClick={()=>props.paricularProductDescription(props.id,props.name,props.description,props.img,props.price,props.about,props.subdescription)} style={{width: 12 +"rem", height : 12 +"rem"}} className="card-img-top center" alt="..."></img>
              </Link> 
                   
                   <div className="card-body">

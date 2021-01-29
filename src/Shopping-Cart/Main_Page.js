@@ -196,11 +196,11 @@ handleClick(event) {
   }
 ///////////////////////////////////////////////////////////////////////////
 
-particularProductDescription(id,name,description,img,price){
+particularProductDescription(id,name,description,img,price,about,subdescription){
  
  //console.log("yoo"+ name)
 
- const particularProduct ={id,name,description,img,price}
+ const particularProduct ={id,name,description,img,price,about,subdescription}
 
  console.log(particularProduct)
 
@@ -299,8 +299,10 @@ particularProductDescription(id,name,description,img,price){
                          description={pdt.description} 
                            img={pdt.img} 
                               price={pdt.price} 
-                               addfunc={this.add.bind(this)}
-                                     paricularProductDescription={this.particularProductDescription.bind(this)}
+                               about={pdt.about}
+                                 subdescription={pdt.subdescription}
+                                    addfunc={this.add.bind(this)}
+                                      paricularProductDescription={this.particularProductDescription.bind(this)}
                    
                    
                    
