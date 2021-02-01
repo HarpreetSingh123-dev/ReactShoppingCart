@@ -1,3 +1,5 @@
+
+
 import { props } from 'ramda';
 import React, { Component } from 'react';
 
@@ -7,11 +9,13 @@ import Side from '../../Shopping-Cart/Main_Page_Bar/Side_Bar'
 import {connect} from 'react-redux'
 import {bindActionCreators} from 'redux'
 
+
+
 // needs to add action 
 
 import descriptionAction from '../../Actions/productDescriptionAction'
 
-
+var axios = require("axios").default
 
 class Product_Description extends Component {
    
@@ -81,6 +85,23 @@ class Product_Description extends Component {
   
     }
 
+    apiTest(){
+
+      var options = {
+        method: 'GET',
+        url: 'https://covid-19-data.p.rapidapi.com/totals',
+        headers: {
+          'x-rapidapi-key': '92e00d3476msh9086087f266cc20p1d4d74jsn45214a2fcb36',
+          'x-rapidapi-host': 'covid-19-data.p.rapidapi.com'
+        }
+      };
+
+      axios.request(options).then(function (response) {
+        console.log(response.data);
+      }).catch(function (error) {
+        console.error(error);
+      });
+    }
  
     render() {
 
@@ -144,7 +165,7 @@ class Product_Description extends Component {
                  })
                }
          
-           
+           <button onClick={this.apiTest.bind(this)}>TEST</button>
              {console.log(this.state)}
              {console.log(this.state.subdescription)}
                
