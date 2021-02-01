@@ -1,4 +1,6 @@
+import { prop } from 'ramda';
 import React from 'react';
+import {Link} from 'react-router-dom'
 import './Lower_SelectBarTwo.css'
 
 
@@ -6,10 +8,10 @@ function Lower_SelectBarTwo(props) {
 
    var a = null
    var b = null
-   if(!props.set){
+   if(props.set){
 
        a =(   
-         <option selected >Featured</option>
+         <option value="featured" >Featured</option>
        )
    } 
     return (
@@ -17,10 +19,10 @@ function Lower_SelectBarTwo(props) {
             <div className="lowerbartwo">
 
                <nav class="nav justify-content-end">
- 
+              
                   <div class="form-group">
                  
-                    <label>Sort By:  </label>
+                    <label>Sort By: &nbsp;</label>
                 
                        <select class="form-select" aria-label="Default select example" onChange={props.selectSort} >
                

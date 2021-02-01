@@ -7,6 +7,31 @@
   left: 10px;
 }
 
+.top_nav_one {
+  position: relative;
+  left: 20px;
+  top: 40px;
+  display: inline-block;
+}
+
+.top_nav_two span {
+  position: relative;
+  left: 20px;
+}
+
+.top_nav_two {
+  position: relative;
+  left: 20px;
+  top: 40px;
+  display: inline-block;
+}
+
+.top_nav_two a:hover {
+  cursor: pointer;
+  border-bottom: 3px solid blue;
+  padding: 0;
+  color: blue;
+}
 /*  */
 
 .paginationSet .container {

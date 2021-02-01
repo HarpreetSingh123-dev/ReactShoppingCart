@@ -7,7 +7,7 @@ const cartProducts = [
       price:40,
       category:"Bcaa",
       about:["Supports Lean Mass Growth", "Reduces Muscle Breakdown" , "Increases Protein Synthesis"],
-      subdescription:{"Flavour" : "No Flavour" , "Ingredients" : "BCAA" , "Brand" : "Muscle Pharma" , "AgeRange" : "Adult", "ItemWeight": "400 grams"}
+      subdescription:[{"Flavour" : "No Flavour" , "Ingredients" : "BCAA" , "Brand" : "MusclePharma" , "AgeRange" : "Adult", "ItemWeight": "400 grams"}]
   
      //about:"Supports Lean Mass Growth",
      //subdescription:"No Flavour"

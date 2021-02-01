@@ -1,6 +1,9 @@
 import { props } from 'ramda';
 import React, { Component } from 'react';
 
+import Navbar from '../../Navbar/Navbar'
+import Side from '../../Shopping-Cart/Main_Page_Bar/Side_Bar'
+
 import {connect} from 'react-redux'
 import {bindActionCreators} from 'redux'
 
@@ -25,7 +28,8 @@ class Product_Description extends Component {
             description:'',
             price:'',
             about:[],
-            subdescription:[]
+            subdescription:[],
+            hamIconSet: true
 
         }
 
@@ -85,20 +89,39 @@ class Product_Description extends Component {
 
         
         return (
+           
             <div>
-                <h1>Product Description</h1>
-               {/* <button onClick={this.show.bind(this)}>Show</button>*/}
-               <img src={this.state.image}></img>
-               <p>{this.state.name}</p>
-               <p>{this.state.description}</p>
-               <p>{this.state.price}</p>
+              
+              <Navbar iconSet={this.state.hamIconSet}></Navbar>
+              
+                  <div className="container-fluid">
+             
+                     <div className="container">
+
+                          <div className="row">
+                  
+                              <div className="col-lg-6">  
+                
+                                       <h1>Product Description</h1>
+               
+                                       <img src={this.state.image}></img>
+              
+                              </div>
+
+
+                              <div className="col-lg-6">
+              
+                                       <p>{this.state.name}</p>
+                                       <p>{this.state.description}</p>
+                                       <p>{this.state.price}</p>
+              
               
               
 
-               {this.state.about.map( (abt)=>{
+                                       {this.state.about.map( (abt)=>{
 
-                   return   <p><b>{abt}</b></p>
-               })}
+                                            return   <p><b>{abt}</b></p>
+                                       })}
 
                {/*this.state.subdescription.map( (subdes)=>{
 
@@ -106,16 +129,17 @@ class Product_Description extends Component {
                })*/}
 
                {
-                 Object.keys(this.state.subdescription).map((subdes)=>{
+                 this.state.subdescription.map((subdes)=>{
   
-                     return <div>
+                     return    <div>
 
-                       <p>{subdes.Flavour}</p>
-                      {/* <p>{subdes.Ingredients}</p>
-                       <p>{subdes.Brand}</p>
-                       <p>{subdes.AgeRange}</p>
-                 <p>{subdes.ItemWeight}</p>*/ }
-                      </div>
+                                     <p>{subdes.Flavour}</p>
+                                     <p>{subdes.Ingredients}</p>
+                                     <p>{subdes.Brand}</p>
+                                     <p>{subdes.AgeRange}</p>
+                                     <p>{subdes.ItemWeight}</p>
+                              
+                               </div>
 
                  })
                }
@@ -124,6 +148,10 @@ class Product_Description extends Component {
              {console.log(this.state)}
              {console.log(this.state.subdescription)}
                
+            </div>
+            </div>
+            </div>
+            </div>
             </div>
         );
     }

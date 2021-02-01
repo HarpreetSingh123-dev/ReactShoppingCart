@@ -8,9 +8,7 @@ function Lower_Bar(props) {
          <div className="lowerbarone">
 
                <nav class="nav justify-content-end">
-               <div class="left_nav">   
-               <a>HOME</a>
-               </div>
+               
                   <div class="form-group">
                  
                     <label><b>Sort By: &nbsp;</b></label>

@@ -194,7 +194,9 @@ handleClick(event) {
       currentPage: Number(event.target.value)
     });
   }
-///////////////////////////////////////////////////////////////////////////
+
+
+//////////////////////Below function if fired when particular product is clicked for description/////////////////
 
 particularProductDescription(id,name,description,img,price,about,subdescription){
  
@@ -208,7 +210,11 @@ particularProductDescription(id,name,description,img,price,about,subdescription)
 
 
 }
-  
+
+
+pp(){
+  this.setState({cat:false})
+}
 
     render() {
        
@@ -277,6 +283,7 @@ particularProductDescription(id,name,description,img,price,about,subdescription)
 
       const category = this.state.cat
        let a ;
+       let s ;
        
     
      ///////////////// if there is no category map products from main list/////////////  
@@ -314,6 +321,7 @@ particularProductDescription(id,name,description,img,price,about,subdescription)
 
             }
             </div>
+
             <div className="paginationSet">
             <div className="container">
             <nav aria-label="Page navigation example"  >
@@ -329,6 +337,12 @@ particularProductDescription(id,name,description,img,price,about,subdescription)
              </div>
 
             )
+
+            s =(
+               <div class="top_nav_one">   
+               <a style={{color: "blue", fontSize: "17px"}}>HOME&nbsp;/</a>
+               </div>
+            )
        }
 
        ////////////////// if there is category selected map products from catlist////////////
@@ -338,6 +352,8 @@ particularProductDescription(id,name,description,img,price,about,subdescription)
             <div className="pgset">
              <LowerSelectBarTwo   selectSort={this.sorting.bind(this)}  
                                   set={this.state.cat}
+                                  
+                                 
              ></LowerSelectBarTwo>
             <div className="row">
 
@@ -361,7 +377,9 @@ particularProductDescription(id,name,description,img,price,about,subdescription)
 
             }
             </div>
-
+            
+            <div className="paginationSet">
+            <div className="container">
             <nav aria-label="Page navigation example"  >
                   <ul class="pagination"  >
  
@@ -371,6 +389,19 @@ particularProductDescription(id,name,description,img,price,about,subdescription)
                   </ul>
              </nav>
             </div>
+            </div>
+            </div>
+        )
+
+        s= (
+         
+            <div class="top_nav_two">   
+               <a style={{color: "blue", fontSize: "17px"}} onClick={this.pp.bind(this)}>HOME</a>
+               <span>/</span>
+               <span>&nbsp;</span>
+               <span style={{fontSize: "17px"}}> {this.state.category}</span>
+           </div>
+
         )
 
     }
@@ -398,7 +429,7 @@ particularProductDescription(id,name,description,img,price,about,subdescription)
           
             <div className="container-fluid"> 
            
-            
+                  {s}
             
               
                   {a}
