@@ -21,8 +21,9 @@ console.log('indescription')
   var price = action.payload.price
   var about = action.payload.about
   var subdescription = action.payload.subdescription
+  var imageSet = action.payload.imageSet
 
-  var finalProduct ={id,name,description,img,price,about,subdescription}
+  var finalProduct ={id,name,description,img,price,about,subdescription,imageSet}
 
   console.log("final product is "+ finalProduct.name)
 

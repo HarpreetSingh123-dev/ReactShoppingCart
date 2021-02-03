@@ -198,11 +198,11 @@ handleClick(event) {
 
 //////////////////////Below function if fired when particular product is clicked for description/////////////////
 
-particularProductDescription(id,name,description,img,price,about,subdescription){
+particularProductDescription(id,name,description,img,price,about,subdescription,imageSet){
  
  //console.log("yoo"+ name)
 
- const particularProduct ={id,name,description,img,price,about,subdescription}
+ const particularProduct ={id,name,description,img,price,about,subdescription,imageSet}
 
  console.log(particularProduct)
 
@@ -309,6 +309,7 @@ pp(){
                               price={pdt.price} 
                                about={pdt.about}
                                  subdescription={pdt.subdescription}
+                                 imageSet={pdt.images}
                                     addfunc={this.add.bind(this)}
                                       paricularProductDescription={this.particularProductDescription.bind(this)}
                    

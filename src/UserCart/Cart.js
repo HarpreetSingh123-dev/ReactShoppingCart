@@ -19,7 +19,7 @@ function Cart(props) {
                <span>Units : {props.units}</span> 
                
                
-               <button onClick={()=>props.addMoreProduct(props.id,props.name,props.description,props.img,props.price,props.units)}>+</button>
+               <button onClick={()=>props.addOneProduct(props.id,props.name,props.description,props.img,props.price,props.units)}>+</button>
                
                <button onClick={()=>props.decreaseOneProduct(props.id,props.name,props.description,props.img,props.price,props.units)}>-</button>
 

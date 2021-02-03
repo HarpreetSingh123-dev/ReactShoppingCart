@@ -1,0 +1,27 @@
+.productDescription .container {
+  border: 2px solid black;
+  margin-top: 20px;
+}
+
+.productDescription .col-lg-6 {
+  border: 2px solid red;
+}
+
+.productDescription
+  .carousel
+  .carousel-control-prev
+  .carousel-control-prev-icon {
+  background-color: black;
+}
+
+.productDescription
+  .carousel
+  .carousel-control-next
+  .carousel-control-next-icon {
+  background-color: black;
+}
+
+.productDescription .carousel .carousel-item {
+  border: 2px solid brown;
+  height: 550px;
+}

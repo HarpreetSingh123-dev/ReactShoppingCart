@@ -1,11 +1,28 @@
 import React, { Component } from 'react';
 import {connect} from 'react-redux'
 import {bindActionCreators} from 'redux'
+
+import incrementCartProduct from '../Actions/incrementCartProduct'
+import decrementCartProduct from '../Actions/decrementCartProduct'
+
 import Cart from './Cart'
 
 
 class User_cart extends Component {
 
+
+    addOne(id,name,description,img,price,units){
+
+        const product ={id,name,description,img,price,units}
+        this.props.incrementCartProduct(product)
+
+    }
+
+    decreaseOne(id,name,description,img,price,units){
+
+        const product ={id,name,description,img,price,units}
+        this.props.decrementCartProduct(product)
+    }
 
 
     render() {
@@ -34,6 +51,9 @@ class User_cart extends Component {
                                          img={item.img} 
                                             price={item.price}
                                               units={item.units.units}
+                                               addOneProduct={this.addOne.bind(this)}
+                                                decreaseOneProduct={this.decreaseOne.bind(this)}
+
                                                    
                              ></Cart>          
 
@@ -42,6 +62,7 @@ class User_cart extends Component {
 
                 </div>
                 <div>{a}</div>
+               
                 </div>
             </div>
         );
@@ -59,4 +80,16 @@ const mapStateToProps = (state) =>{
 
 }
 
-export default connect(mapStateToProps,null) (User_cart)
+
+const mapActionsToProps = (dispatch) =>{
+
+    return bindActionCreators({
+  
+        incrementCartProduct,
+        decrementCartProduct,
+        
+       
+         }, dispatch)
+    }
+
+export default connect(mapStateToProps,mapActionsToProps) (User_cart)

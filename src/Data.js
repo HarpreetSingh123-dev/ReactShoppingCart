@@ -1,14 +1,80 @@
+import Image1 from './Image-Set/MusclePharmBcaa/MainImage.jpg'
+import Image2 from './Image-Set/MusclePharmBcaa/MusclePharm2.jpg'
+import Image3 from './Image-Set/MusclePharmBcaa/MusclePharm3.jpg'
+
+import Image4 from './Image-Set/MuscleTechCreatine/MuscleTechCreatine1.jpg'
+import Image5 from './Image-Set/MuscleTechCreatine/MuscleTechCreatine2.jpg'
+import Image6 from './Image-Set/MuscleTechCreatine/MuscleTechCreatine3.jpg'
+
+import Image7 from './Image-Set/OnWheyIsolate/OnWhey1.jpg'
+import Image8 from './Image-Set/OnWheyIsolate/OnWhey2.jpg'
+
+import Image9 from './Image-Set/MusclePharmAssault/MPAssault1.jpg'
+import Image10 from './Image-Set/MusclePharmAssault/MPAssault2.jpg'
+
+import Image11 from './Image-Set/SignatureProtienBar/SignatureBar1.jpg'
+import Image12 from './Image-Set/SignatureProtienBar/SignatureBar2.jpg'
+
+import Image13 from './Image-Set/OnProtienBar/OnBar1.jpg'
+import Image14 from './Image-Set/OnProtienBar/OnBar2.jpg'
+
+import Image15 from './Image-Set/PureProtienBar/PureProtienBar1.jpg'
+import Image16 from './Image-Set/PureProtienBar/PureProtienBar2.jpg'
+
+import Image17 from './Image-Set/QuestProtienBar/QuestBar1.jpg'
+import Image18 from './Image-Set/QuestProtienBar/QuestBar2.jpg'
+
+import Image19 from './Image-Set/GatNitraflex/GatNitraflex1.jpg'
+import Image20 from './Image-Set/GatNitraflex/GatNitraflex2.jpg'
+import Image21 from './Image-Set/GatNitraflex/GatNitraflex3.jpg'
+
+import Image22 from './Image-Set/ProSuppsMrHyde/MrHyde1.jpg'
+import Image23 from './Image-Set/ProSuppsMrHyde/MrHyde2.jpg'
+
+import Image24 from './Image-Set/ProSuppsDrJekyll/DrJekyll1.jpg'
+import Image25 from './Image-Set/ProSuppsDrJekyll/DrJekyll2.jpg'
+import Image26 from './Image-Set/ProSuppsDrJekyll/DrJekyll3.jpg'
+
+import Image27 from './Image-Set/MuscleTechVapor5/MTVapor1.jpg' 
+import Image28 from './Image-Set/MuscleTechVapor5/MTVapor2.jpg'
+
+import Image29 from './Image-Set/MuscleTechNitroTech/NitroTech1.jpg'
+import Image30 from './Image-Set/MuscleTechNitroTech/NitroTech2.jpg'
+
+import Image31 from './Image-Set/DymatizeWhey/Dymatize1.jpg'
+import Image32 from './Image-Set/DymatizeWhey/Dymatize2.jpg'
+
+import Image33 from './Image-Set/DymatizeCreatine1/DymatizeCreatine1.jpg'
+import Image34 from './Image-Set/DymatizeCreatine1/DymatizeCreatine2.jpg'
+
+import Image35 from './Image-Set/MusclePharmWhey/MusclePharmWhey1.jpg'
+import Image36 from './Image-Set/MusclePharmWhey/MusclePharmWhey2.jpg'
+
+import Image37 from './Image-Set/OnCreatine/OnCreatine1.jpg'
+import Image38 from './Image-Set/OnCreatine/OnCreatine2.jpg'
+
+import Image39 from './Image-Set/OnIsolate/OnGoldIsolate1.jpg'
+import Image40 from './Image-Set/OnIsolate/OnGoldIsolate2.jpg'
+
+import Image41 from './Image-Set/ProSuppsWhey/ProSuppsWhey1.jpg'
+import Image42 from './Image-Set/ProSuppsWhey/ProSuppsWhey2.jpg'
+
+import Image43 from './Image-Set/MyProtienWhey/MyProtienWhey1.jpg'
+import Image44 from './Image-Set/MyProtienWhey/MyProtienWhey2.jpg'
+
+
+
 const cartProducts = [
     {
       id:1,
       name:"Muscle Pharma Bcaa",
       description:"Made From Finest Quality of Amino Acids",
-      img:"https://cdn.shopify.com/s/files/1/1618/2767/products/Essentials_BCAA_30serve_caps_1024x1024.jpg?v=1542062133",
+      img:Image1,
       price:40,
       category:"Bcaa",
       about:["Supports Lean Mass Growth", "Reduces Muscle Breakdown" , "Increases Protein Synthesis"],
-      subdescription:[{"Flavour" : "No Flavour" , "Ingredients" : "BCAA" , "Brand" : "MusclePharma" , "AgeRange" : "Adult", "ItemWeight": "400 grams"}]
-  
+      subdescription:[{"Flavour" : "No Flavour" , "Ingredients" : "BCAA" , "Brand" : "MusclePharma" , "AgeRange" : "Adult", "ItemWeight": "400 grams"}],
+      images:[Image1,Image2,Image3]
      //about:"Supports Lean Mass Growth",
      //subdescription:"No Flavour"
     },
@@ -17,9 +83,12 @@ const cartProducts = [
       id:2,
       name:"Muscletech Creatine",
       description:"Clinically researched for best in calss results",
-      img:"https://store.bbcomcdn.com/images/store/skuimage/sku_MT2320202/image_skuMT2320202_largeImage_X_450_white.jpg",
+      img:Image4,
       price:406,
-      category:"Creatine"
+      category:"Creatine",
+      about:["Supports Lean Mass Growth", "Reduces Muscle Breakdown" , "Increases Protein Synthesis"],
+      subdescription:[{"Flavour" : "No Flavour" , "Ingredients" : "BCAA" , "Brand" : "MusclePharma" , "AgeRange" : "Adult", "ItemWeight": "400 grams"}],
+      images:[Image4,Image5,Image6]
   
     },
   
@@ -27,9 +96,12 @@ const cartProducts = [
       id:3,
       name:"On Whey Protien Isolate",
       description:"Made from finest quality of raw materials from usa",
-      img:"https://store.bbcomcdn.com/images/store/skuimage/sku_OPT232/image_skuOPT232_largeImage_X_450_white.jpg",
+      img:Image7,
       price:70,
-      category:"Whey"
+      category:"Whey",
+      about:["Supports Lean Mass Growth", "Reduces Muscle Breakdown" , "Increases Protein Synthesis"],
+      subdescription:[{"Flavour" : "No Flavour" , "Ingredients" : "BCAA" , "Brand" : "MusclePharma" , "AgeRange" : "Adult", "ItemWeight": "400 grams"}],
+      images:[Image7,Image8,Image7]
   
     },
   
@@ -37,9 +109,12 @@ const cartProducts = [
       id:4,
       name:"MusclePharm Assault",
       description:"Preworout with great flavour and result",
-      img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhtW9ByJhUNavGfwMm5VClHWjHjQMDgll2zw&usqp=CAU",
+      img:Image9,
       price:34,
-      category:"Preworkout"
+      category:"Preworkout",
+      about:["Supports Lean Mass Growth", "Reduces Muscle Breakdown" , "Increases Protein Synthesis"],
+      subdescription:[{"Flavour" : "No Flavour" , "Ingredients" : "BCAA" , "Brand" : "MusclePharma" , "AgeRange" : "Adult", "ItemWeight": "400 grams"}],
+      images:[Image9,Image10,Image9]
   
     },
   
@@ -47,9 +122,12 @@ const cartProducts = [
       id:5,
       name:"Signature Protien Bar",
       description:"Great and handy quality protien",
-      img:"https://store.bbcomcdn.com/images/store/skuimage/sku_BBCOM5440030/image_skuBBCOM5440030_largeImage_X_450_white.jpg",
+      img:Image11,
       price:29,
-      category:"Bars"
+      category:"Bars",
+      about:["Supports Lean Mass Growth", "Reduces Muscle Breakdown" , "Increases Protein Synthesis"],
+      subdescription:[{"Flavour" : "No Flavour" , "Ingredients" : "BCAA" , "Brand" : "MusclePharma" , "AgeRange" : "Adult", "ItemWeight": "400 grams"}],
+      images:[Image11,Image12,Image11]
   
     },
 
@@ -57,9 +135,12 @@ const cartProducts = [
         id:6,
         name:"On Protien Bar",
         description:"Great and handy quality protien",
-        img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmI0K2ZB-FpZJwp6p_Im25ms7BoYn1JWP7Qw&usqp=CAU",
+        img:Image13,
         price:29,
-        category:"Bars"
+        category:"Bars",
+        about:["Supports Lean Mass Growth", "Reduces Muscle Breakdown" , "Increases Protein Synthesis"],
+        subdescription:[{"Flavour" : "No Flavour" , "Ingredients" : "BCAA" , "Brand" : "MusclePharma" , "AgeRange" : "Adult", "ItemWeight": "400 grams"}],
+        images:[Image13,Image14,Image13]
     
       },
 
@@ -67,9 +148,12 @@ const cartProducts = [
         id:7,
         name:"Pure Protien Bar",
         description:"Great and handy quality protien",
-        img:"https://i2.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/731618127/protein-bars-pureprotein.jpg?w=640&ssl=1",
+        img:Image15,
         price:29,
-        category:"Bars"
+        category:"Bars",
+        about:["Supports Lean Mass Growth", "Reduces Muscle Breakdown" , "Increases Protein Synthesis"],
+        subdescription:[{"Flavour" : "No Flavour" , "Ingredients" : "BCAA" , "Brand" : "MusclePharma" , "AgeRange" : "Adult", "ItemWeight": "400 grams"}],
+        images:[Image15,Image16,Image15]
     
       },
 
@@ -77,9 +161,12 @@ const cartProducts = [
         id:8,
         name:"Quest Protien Bar",
         description:"Great and handy quality protien",
-        img:"https://www.londondrugs.com/on/demandware.static/-/Sites-londondrugs-master/default/dw6b0faea5/products/L8243669/large/L8243669.JPG",
+        img:Image17,
         price:29,
-        category:"Bars"
+        category:"Bars",
+        about:["Supports Lean Mass Growth", "Reduces Muscle Breakdown" , "Increases Protein Synthesis"],
+        subdescription:[{"Flavour" : "No Flavour" , "Ingredients" : "BCAA" , "Brand" : "MusclePharma" , "AgeRange" : "Adult", "ItemWeight": "400 grams"}],
+        images:[Image17,Image18,Image17]
     
       },
 
@@ -87,9 +174,12 @@ const cartProducts = [
         id:9,
         name:"GAT Nitraflex",
         description:"Preworout with great flavour and result",
-        img:"https://store.bbcomcdn.com/images/store/skuimage/sku_GAT3660243/image_skuGAT3660243_largeImage_X_450_white.jpg",
+        img:Image19,
         price:34,
-        category:"Preworkout"
+        category:"Preworkout",
+        about:["Supports Lean Mass Growth", "Reduces Muscle Breakdown" , "Increases Protein Synthesis"],
+        subdescription:[{"Flavour" : "No Flavour" , "Ingredients" : "BCAA" , "Brand" : "MusclePharma" , "AgeRange" : "Adult", "ItemWeight": "400 grams"}],
+        images:[Image19,Image20,Image21]
     
       },
 
@@ -97,9 +187,12 @@ const cartProducts = [
         id:10,
         name:"ProSupps Mr Hyde",
         description:"Preworout with great flavour and result",
-        img:"https://i5.walmartimages.com/asr/ac322720-7de1-4b1d-bef8-57d2b369890d_1.8eb3af8c2f5e45f4fe9918750e632522.jpeg?odnHeight=450&odnWidth=450&odnBg=ffffff",
+        img:Image22,
         price:34,
-        category:"Preworkout"
+        category:"Preworkout",
+        about:["Supports Lean Mass Growth", "Reduces Muscle Breakdown" , "Increases Protein Synthesis"],
+        subdescription:[{"Flavour" : "No Flavour" , "Ingredients" : "BCAA" , "Brand" : "MusclePharma" , "AgeRange" : "Adult", "ItemWeight": "400 grams"}],
+        images:[Image22,Image23,Image22]
     
       },
 
@@ -107,19 +200,24 @@ const cartProducts = [
         id:11,
         name:"ProSupps Dr Jekyll",
         description:"Preworout with great flavour and result",
-        img:"https://images.proteini.si/en/products/9578_2982/main/prosupps-dr-jekyll-210g-lollipop-punch.jpg",
+        img:Image24,
         price:34,
-        category:"Preworkout"
-    
+        category:"Preworkout",
+        about:["Supports Lean Mass Growth", "Reduces Muscle Breakdown" , "Increases Protein Synthesis"],
+        subdescription:[{"Flavour" : "No Flavour" , "Ingredients" : "BCAA" , "Brand" : "MusclePharma" , "AgeRange" : "Adult", "ItemWeight": "400 grams"}],
+        images:[Image24,Image25,Image26]
       },
 
       {
         id:12,
         name:"MuscleTech Vapor X5",
         description:"Preworout with great flavour and result",
-        img:"https://cdn.shopify.com/s/files/1/0944/0726/products/Muscletech-Vapor-X5-Next-Gen-Pre-Workout-RIPPED-Strawberry-Limeade_1200x630.jpg?v=1588805077",
+        img:Image27,
         price:34,
-        category:"Preworkout"
+        category:"Preworkout",
+        about:["Supports Lean Mass Growth", "Reduces Muscle Breakdown" , "Increases Protein Synthesis"],
+        subdescription:[{"Flavour" : "No Flavour" , "Ingredients" : "BCAA" , "Brand" : "MusclePharma" , "AgeRange" : "Adult", "ItemWeight": "400 grams"}],
+        images:[Image27,Image28,Image27]
     
       },
 
@@ -127,9 +225,12 @@ const cartProducts = [
         id:13,
         name:"MuscleTech Nitro Tech Ripped",
         description:"Preworout with great flavour and result",
-        img:"https://i5.walmartimages.ca/images/Enlarge/839/976/6000200839976.jpg",
+        img:Image29,
         price:34,
-        category:"Whey"
+        category:"Whey",
+        about:["Supports Lean Mass Growth", "Reduces Muscle Breakdown" , "Increases Protein Synthesis"],
+        subdescription:[{"Flavour" : "No Flavour" , "Ingredients" : "BCAA" , "Brand" : "MusclePharma" , "AgeRange" : "Adult", "ItemWeight": "400 grams"}],
+        images:[Image29,Image30,Image29]
     
       },
 
@@ -137,19 +238,25 @@ const cartProducts = [
         id:14,
         name:"Dymatize Hydrolized ISO 100",
         description:"Preworout with great flavour and result",
-        img:"https://images-na.ssl-images-amazon.com/images/I/81tmWFvt8VL._AC_SL1500_.jpg",
+        img:Image31,
         price:34,
-        category:"Whey"
+        category:"Whey",
+        about:["Supports Lean Mass Growth", "Reduces Muscle Breakdown" , "Increases Protein Synthesis"],
+        subdescription:[{"Flavour" : "No Flavour" , "Ingredients" : "BCAA" , "Brand" : "MusclePharma" , "AgeRange" : "Adult", "ItemWeight": "400 grams"}],
+        images:[Image31,Image32,Image31]
     
       },
 
       {
         id:15,
         name:"Dymatize Creatine",
-        description:"Preworout with great flavour and result",
+        description:Image33,
         img:"https://pushnutrition.ca/media/catalog/product/cache/3/image/512x512/9df78eab33525d08d6e5fb8d27136e95/n/e/xnew-creatine.png.pagespeed.ic.BxOonF9ik4.png",
         price:34,
-        category:"Creatine"
+        category:"Creatine",
+        about:["Supports Lean Mass Growth", "Reduces Muscle Breakdown" , "Increases Protein Synthesis"],
+        subdescription:[{"Flavour" : "No Flavour" , "Ingredients" : "BCAA" , "Brand" : "MusclePharma" , "AgeRange" : "Adult", "ItemWeight": "400 grams"}],
+        images:[Image33,Image34,Image33]
     
       },
 
@@ -157,9 +264,12 @@ const cartProducts = [
         id:16,
         name:"MusclePharm Combat",
         description:"Preworout with great flavour and result",
-        img:"https://cdn.shopify.com/s/files/1/1618/2767/products/SportSeries_Combat_5lb_ChocolateMilk_650x.jpg?v=1559580836",
+        img:Image35,
         price:34,
-        category:"Whey"
+        category:"Whey",
+        about:["Supports Lean Mass Growth", "Reduces Muscle Breakdown" , "Increases Protein Synthesis"],
+        subdescription:[{"Flavour" : "No Flavour" , "Ingredients" : "BCAA" , "Brand" : "MusclePharma" , "AgeRange" : "Adult", "ItemWeight": "400 grams"}],
+        images:[Image35,Image36,Image35]
     
       },
 
@@ -167,19 +277,25 @@ const cartProducts = [
         id:17,
         name:"Optimum Nutrition Creatine",
         description:"Preworout with great flavour and result",
-        img:"https://cdn1.evitamins.com/images/products/Optimum_Nutrition/15911/500/15911_front2020.jpg",
+        img:Image38,
         price:34,
-        category:"Creatine"
+        category:"Creatine",
+        about:["Supports Lean Mass Growth", "Reduces Muscle Breakdown" , "Increases Protein Synthesis"],
+        subdescription:[{"Flavour" : "No Flavour" , "Ingredients" : "BCAA" , "Brand" : "MusclePharma" , "AgeRange" : "Adult", "ItemWeight": "400 grams"}],
+        images:[Image38,Image37,Image38]
     
       },
 
       {
         id:18,
         name:"Optimum Nutrition 100% Isolate",
-        description:"Preworout with great flavour and result",
+        description:Image39,
         img:"https://store.bbcomcdn.com/images/store/skuimage/sku_OPT5410062/image_skuOPT5410062_largeImage_X_450_white.jpg",
         price:34,
-        category:"Whey"
+        category:"Whey",
+        about:["Supports Lean Mass Growth", "Reduces Muscle Breakdown" , "Increases Protein Synthesis"],
+        subdescription:[{"Flavour" : "No Flavour" , "Ingredients" : "BCAA" , "Brand" : "MusclePharma" , "AgeRange" : "Adult", "ItemWeight": "400 grams"}],
+        images:[Image39,Image40,Image39]
     
       },
 
@@ -187,9 +303,12 @@ const cartProducts = [
         id:19,
         name:"Pro Supps Whey",
         description:"Preworout with great flavour and result",
-        img:"https://images-na.ssl-images-amazon.com/images/I/81qdT5eFL9L._AC_SX425_.jpg",
+        img:Image41,
         price:34,
-        category:"Whey"
+        category:"Whey",
+        about:["Supports Lean Mass Growth", "Reduces Muscle Breakdown" , "Increases Protein Synthesis"],
+        subdescription:[{"Flavour" : "No Flavour" , "Ingredients" : "BCAA" , "Brand" : "MusclePharma" , "AgeRange" : "Adult", "ItemWeight": "400 grams"}],
+        images:[Image41,Image42,Image41]
     
       },
 
@@ -197,9 +316,12 @@ const cartProducts = [
         id:20,
         name:"My Protien Whey",
         description:"Preworout with great flavour and result",
-        img:"https://images-na.ssl-images-amazon.com/images/I/716KMH0OV3L._SL1500_.jpg",
+        img:Image43,
         price:34,
-        category:"Whey"
+        category:"Whey",
+        about:["Supports Lean Mass Growth", "Reduces Muscle Breakdown" , "Increases Protein Synthesis"],
+        subdescription:[{"Flavour" : "No Flavour" , "Ingredients" : "BCAA" , "Brand" : "MusclePharma" , "AgeRange" : "Adult", "ItemWeight": "400 grams"}],
+        images:[Image43,Image44,Image43]
     
       },
 
