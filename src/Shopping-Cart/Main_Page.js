@@ -367,7 +367,11 @@ pp(){
                          description={pdt.description} 
                            img={pdt.img} 
                               price={pdt.price} 
-                               addfunc={this.add.bind(this)}
+                               about={pdt.about}
+                                 subdescription={pdt.subdescription}
+                                  imageSet={pdt.images}
+                                   addfunc={this.add.bind(this)}
+                                     paricularProductDescription={this.particularProductDescription.bind(this)}
                    
                    
                    
