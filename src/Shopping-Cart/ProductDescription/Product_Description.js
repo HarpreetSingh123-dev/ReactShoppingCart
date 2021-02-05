@@ -8,6 +8,7 @@ import Side from '../../Shopping-Cart/Main_Page_Bar/Side_Bar'
 
 import {connect} from 'react-redux'
 import {bindActionCreators} from 'redux'
+import {Link} from 'react-router-dom'
 
 import './Product_Description.css'
 
@@ -125,6 +126,8 @@ class Product_Description extends Component {
                   
                   <div className="container-fluid">
              
+                  <div className="descriptionNav"><Link to='/shopping'>Back</Link></div>
+                    
                      <div className="container">
 
                           <div className="row">
@@ -249,7 +252,12 @@ class Product_Description extends Component {
             </div>
             </div>
             </div>
+
+            <footer class="navbar-dark bg-dark">
+              
+              </footer >
             </div>
+          
             </div>
         );
     }
