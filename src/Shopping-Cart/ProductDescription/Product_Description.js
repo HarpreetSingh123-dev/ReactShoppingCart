@@ -129,7 +129,7 @@ class Product_Description extends Component {
                   
                               <div className="col-lg-6">  
                 
-                                       <h1 className="text-center">Product Description</h1>
+                                      
                
                                       {/* <img src={this.state.image}></img>*/}
 
@@ -164,36 +164,75 @@ class Product_Description extends Component {
 
 
                               <div className="col-lg-6">
+                              <h2 className="text-center">Product Description</h2>
+                                     
+                                       <hr></hr>
+                                       
+                                       <h4>Price: &nbsp;{this.state.price} CDN$</h4>
+                                       <p><b>{this.state.name}</b></p>
+                                       <p><b>{this.state.description}</b></p>
+                                       
               
-                                       <p>{this.state.name}</p>
-                                       <p>{this.state.description}</p>
-                                       <p>{this.state.price}</p>
               
               
-              
-
+                                       <hr></hr>
+                                     
+                                       <p><b>About This Item</b></p>
+                                       <ul>
                                        {this.state.about.map( (abt)=>{
 
-                                            return   <p><b>{abt}</b></p>
+                                            return   <li>{abt}</li>
                                        })}
 
-               {/*this.state.subdescription.map( (subdes)=>{
-
-                   return <p>{subdes.Flavour}</p>
-               })*/}
-
-               {
-                 this.state.subdescription.map((subdes)=>{
+                                      </ul>
+                                     
+                                      <hr></hr>
+              
+                                     {
+                                        this.state.subdescription.map((subdes)=>{
   
-                     return    <div>
+                                     return    <div>
 
-                                     <p>{subdes.Flavour}</p>
-                                     <p>{subdes.Ingredients}</p>
-                                     <p>{subdes.Brand}</p>
-                                     <p>{subdes.AgeRange}</p>
-                                     <p>{subdes.ItemWeight}</p>
-                              
-                               </div>
+                                               <table>
+                                                 {/*
+                                                   <p>{subdes.Flavour}</p>
+                                                   <p>{subdes.Ingredients}</p>
+                                                   <p>{subdes.Brand}</p>
+                                                   <p>{subdes.AgeRange}</p>
+                                                 <p>{subdes.ItemWeight}</p> */}
+
+                                                 <tr> 
+                                                     <td><b>Flavour</b></td> 
+                                                     <td>&nbsp; </td>
+                                                     <td>{subdes.Flavour}</td> 
+                                                 </tr>
+
+                                                 <tr>
+                                                     <td><b>Ingridients</b></td> 
+                                                     <td>&nbsp; </td> 
+                                                     <td>{subdes.Ingredients}</td>
+                                                 </tr>
+
+                                                 <tr>
+                                                    <td><b>Brand</b></td>
+                                                    <td>&nbsp; </td> 
+                                                    <td>{subdes.Brand}</td>
+                                                 </tr>
+                                                 
+                                                 <tr>
+                                                    <td><b>AgeRange</b></td>
+                                                    <td>&nbsp; </td> 
+                                                    <td>{subdes.AgeRange}</td>
+                                                 </tr>
+                                                 
+                                                 <tr>
+                                                   <td><b>Weight</b>
+                                                   </td><td>&nbsp; </td> 
+                                                   <td>{subdes.ItemWeight}</td>
+                                                </tr>
+                                              
+                                              </table>
+                                             </div>
 
                  })
                }
