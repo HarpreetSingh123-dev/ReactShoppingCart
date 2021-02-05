@@ -17,7 +17,7 @@ function Products_Disp(props) {
         
                       <h5 className="card-title text-center text-truncate">{props.name}</h5>
                      
-                      <p>Price: {props.price} Rs</p>
+                      <p><b>Price: {props.price}&nbsp;CDN$</b></p>
                       <p className="card-text text-truncate">{props.description}</p>
                       
                       <div>
