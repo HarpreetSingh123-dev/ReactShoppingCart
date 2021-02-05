@@ -13,9 +13,9 @@ import './Product_Description.css'
 
 // needs to add action 
 
-import descriptionAction from '../../Actions/productDescriptionAction'
+import addToCartAction from '../../Actions/addToCartAction'
 
-var axios = require("axios").default
+//var axios = require("axios").default
 
 class Product_Description extends Component {
    
@@ -74,18 +74,6 @@ class Product_Description extends Component {
 
       })
 
-   //var a = this.state.about.map( (abt)=>{
-
-     //    return <p>abt</p>
-   //  })
-
-     // this.state.subdescription.map( (subdes)=>{
-
-
-     // })
-
-
-  
     }
 /*
     apiTest(){
@@ -106,6 +94,20 @@ class Product_Description extends Component {
         console.error(error);
       });
     }  */
+
+    addToCart(){
+      
+      var id = this.state.id
+      var name = this.state.name
+      var description = this.state.description
+      var img = this.state.image
+      var price = this.state.price
+      var units = {units:1}
+
+      const product = {id,name,description,img,price,units}
+
+      this.props.addToCartAction(product)
+    }
  
     render() {
 
@@ -236,6 +238,8 @@ class Product_Description extends Component {
 
                  })
                }
+
+                   <button  onClick={this.addToCart.bind(this)}class="btn btn-primary" >Add To Cart</button>
          
          {/*  <button onClick={this.apiTest.bind(this)}>TEST</button>*/}
              {console.log(this.state)}
@@ -265,4 +269,14 @@ const mapStateToProps = (state) =>{
 
 }
 
-export default connect(mapStateToProps, null) (Product_Description);
+
+const mapActionsToProps =(dispatch) =>{
+
+  return bindActionCreators({
+
+    addToCartAction
+  }, dispatch)
+
+}
+
+export default connect(mapStateToProps, mapActionsToProps) (Product_Description);
