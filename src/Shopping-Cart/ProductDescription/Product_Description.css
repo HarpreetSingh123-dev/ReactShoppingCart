@@ -35,3 +35,9 @@
   background-color: darkgoldenrod;
   margin-top: 30px;
 }
+
+.productDescription .descriptionNav {
+  position: relative;
+  left: 10px;
+  top: 10px;
+}

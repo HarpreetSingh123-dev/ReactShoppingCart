@@ -21,7 +21,7 @@ function Products_Disp(props) {
                       <p className="card-text text-truncate">{props.description}</p>
                       
                       <div>
-                      <button  onClick={() => props.addfunc( props.id,props.name,props.description,props.img,props.price,{units:1} )} data-toggle="modal" data-target="#exampleModal" class="btn btn-primary"  >Add To Cart</button>
+                     {/*<button  onClick={() => props.addfunc( props.id,props.name,props.description,props.img,props.price,{units:1} )} data-toggle="modal" data-target="#exampleModal" class="btn btn-primary"  >Add To Cart</button>*/}
                       </div>
                 
                 </div>

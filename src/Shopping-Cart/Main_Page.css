@@ -110,3 +110,9 @@
 .bm-overlay {
   background: rgba(0, 0, 0, 0.3);
 }
+
+@media (max-width: 375px) {
+  .Main_Page .row {
+    left: 50px;
+  }
+}
