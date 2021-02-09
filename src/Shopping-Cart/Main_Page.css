@@ -110,9 +110,9 @@
 .bm-overlay {
   background: rgba(0, 0, 0, 0.3);
 }
-
-@media (max-width: 375px) {
-  .Main_Page .row {
-    left: 50px;
+@media (max-width: 560px) {
+  .Main_Page .pgset .row {
+    display: flex;
+    justify-content: center;
   }
 }
