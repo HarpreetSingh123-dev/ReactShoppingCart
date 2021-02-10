@@ -8,10 +8,13 @@
 }
 
 .top_nav_one {
-  position: relative;
-  left: 20px;
-  top: 40px;
-  display: inline-block;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.top_nav_two {
+  margin-left: 20px;
+  margin-top: 20px;
 }
 
 .top_nav_two span {
@@ -19,12 +22,13 @@
   left: 20px;
 }
 
+/*
 .top_nav_two {
   position: relative;
   left: 20px;
   top: 40px;
   display: inline-block;
-}
+}*/
 
 .top_nav_two a:hover {
   cursor: pointer;
@@ -114,5 +118,9 @@
   .Main_Page .pgset .row {
     display: flex;
     justify-content: center;
+  }
+
+  .Main_Page .pgset .row .col {
+    left: 0%;
   }
 }

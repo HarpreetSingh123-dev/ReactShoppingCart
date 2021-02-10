@@ -291,11 +291,12 @@ pp(){
 
         a = (
             <div className="pgset" >
-               <LowerSelectBarOne selectSort={this.sorting.bind(this)}
-                                  
-            
-            
-               ></LowerSelectBarOne>
+
+              <div className="LowerSelectBarOne">
+                      <LowerSelectBarOne selectSort={this.sorting.bind(this)} ></LowerSelectBarOne>
+               </div>
+
+
             <div className="row">
            
             {currentTodos.map(  (pdt) =>  //// rendering from  "currentTodos" see just below render() how this variable is made
@@ -351,11 +352,14 @@ pp(){
 
         a = (
             <div className="pgset">
-             <LowerSelectBarTwo   selectSort={this.sorting.bind(this)}  
-                                  set={this.state.cat}
-                                  
-                                 
-             ></LowerSelectBarTwo>
+
+             <div className="LowerSelectBarTwo"> 
+                  <LowerSelectBarTwo   selectSort={this.sorting.bind(this)}  
+                                       set={this.state.cat}
+                  ></LowerSelectBarTwo>
+
+             </div>
+
             <div className="row">
 
             {categoryCurrentToDos.map(  (pdt) => 
@@ -434,8 +438,9 @@ pp(){
           
             <div className="container-fluid"> 
           
+                 <div>
                   {s}
-            
+                 </div>
               
                   {a}
                      {/*  <Link to="/Cart"><button>Go To Cart</button></Link>*/}
