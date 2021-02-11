@@ -89,8 +89,42 @@ export default function cartReducer(state = INITIAL_STATE, action = {}) {
     }
 
     ////////////////////////////////////////////////////////////////////////////
-    
+    case "CLEAR_CART":{
 
+     
+      const p = []
+
+      return p
+
+    }
+
+    ///////////////////////////////////////////////////////////////////////////
+
+    case "DELETE_ITEM":{
+
+
+      const product = action.payload
+      
+      const cart = state
+
+      const exsistingProductIndex = cart.findIndex(p => p.id === product.id)
+
+      if (exsistingProductIndex >= 0){
+
+        const cartProducts = [...cart];
+        cartProducts.splice(exsistingProductIndex, 1)
+        return cartProducts
+      }
+
+      
+
+      console.log(product.id)
+      console.log(" in delete")
+
+
+
+
+    }
 }
 
 

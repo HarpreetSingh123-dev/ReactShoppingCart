@@ -1,3 +1,4 @@
+import { prop } from 'ramda';
 import React from 'react';
 
 function Cart(props) {
@@ -23,6 +24,7 @@ function Cart(props) {
                
                <button onClick={()=>props.decreaseOneProduct(props.id,props.name,props.description,props.img,props.price,props.units)}>-</button>
 
+               <button onClick={()=>props.deleteItem(props.id)}>Delete Item</button>
                 <span><p> <b>Price For {props.units} Units:{props.units* props.price} Rs</b></p> </span>
  </div>
   </div>

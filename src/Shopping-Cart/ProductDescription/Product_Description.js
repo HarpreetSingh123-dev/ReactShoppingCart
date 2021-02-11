@@ -266,12 +266,12 @@ class Product_Description extends Component {
                       </div>*/}
      
                       <div class="modal-body">
-                           <h5>Product Added To Cart</h5> 
+                           <h5>{this.state.name} Added To Cart</h5> 
                      </div>
      
                     <div class="modal-footer">
                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                     <button type="button" class="btn btn-primary">Save changes</button>
+                     
                    </div>
                </div>
              </div>

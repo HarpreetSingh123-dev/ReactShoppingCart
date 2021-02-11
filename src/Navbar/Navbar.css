@@ -6,6 +6,15 @@
   color: whitesmoke;
 }
 
-.Navbar .navbar-collapse a {
-  margin-right: 30px;
+.Navbar .navbar-collapse a,
+img {
+  margin-right: 20px;
+}
+
+@media (min-width: 500px) and (max-width: 900px) {
+  .Navbar .navbar-collapse a,
+  img {
+    margin-right: 0px;
+    margin-top: 10px;
+  }
 }

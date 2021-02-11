@@ -1,10 +1,12 @@
 import {combineReducers} from 'redux'
 import cartReducer from './CartReducer'
 import productDescription from './DescriptionReducer'
+import cartTotal from './TotalOfCartReducer'
 
 export default combineReducers({
 
     cart:cartReducer,
-    description:productDescription
+    description:productDescription,
+    total:cartTotal
 })
 
