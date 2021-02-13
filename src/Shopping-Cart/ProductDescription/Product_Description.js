@@ -280,7 +280,7 @@ class Product_Description extends Component {
           </div>
 
 
-          <div className="footer navbar-dark bg-dark">gg</div>
+         {/* <div className="footer navbar-dark bg-dark">gg</div>*/}
             </div>
           
             </div>
