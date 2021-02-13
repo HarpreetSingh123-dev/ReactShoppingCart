@@ -122,7 +122,10 @@ class Product_Description extends Component {
            
             <div>
               
-              <Navbar iconSet={this.state.hamIconSet}></Navbar>
+              <Navbar iconSet={this.state.hamIconSet}
+                      number={this.props.totalProducts}>
+                
+              </Navbar>
               
               <div className="productDescription">
                   
@@ -280,9 +283,9 @@ class Product_Description extends Component {
           </div>
 
 
-         {/* <div className="footer navbar-dark bg-dark">gg</div>*/}
+         
             </div>
-          
+           
             </div>
         );
     }
@@ -297,7 +300,8 @@ const mapStateToProps = (state) =>{
     //}, dispatch)
 
     return {
-        description:state.description
+        description:state.description,
+        totalProducts:state.totalProducts
     }
 
 }

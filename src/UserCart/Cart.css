@@ -1,0 +1,21 @@
+.cart img {
+  /* width: 9 rem;
+  height: 9 rem;*/
+
+  /* width: 200px;
+  height: 200px; */
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height: 80%;
+}
+
+@media (max-width: 580px) {
+  .cart img {
+    /* width: 9 rem;
+        height: 9 rem;*/
+    width: 90%;
+  }
+}

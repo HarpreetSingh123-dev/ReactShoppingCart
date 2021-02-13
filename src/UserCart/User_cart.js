@@ -18,9 +18,6 @@ import deleteTotalCartProducts from '../Actions/TotalProductsInCart/deleteProduc
 
 
 ////////////////////////////////////////////////////////////////////////
-
-import Navbar from '../Navbar/Navbar'
-
 import Cart from './Cart'
 
 
@@ -93,10 +90,11 @@ class User_cart extends Component {
             <div>
           <div className="userCart">
           <div className="header navbar-dark bg-dark"></div>
-          <h4>You Have Following products</h4>
 
-                  <div className="container">  
-                  <div className="row">
+          <div className="container">
+          <h4 className="text-center">You Have Following products</h4>
+
+                
                    {this.props.cart.map((item)=>
 
                           <Cart id={item.id}
@@ -114,7 +112,7 @@ class User_cart extends Component {
 
 
                    )}
-
+                 
                    {console.log("cart below")}
                    {console.log(this.props.cart)}
 
@@ -123,15 +121,8 @@ class User_cart extends Component {
                 <div>{b}</div>
                 <div>{c}</div>
                 <div>{d}</div>
+               </div>
                
-                </div>
-
-                
-                
-                    <div className="footer navbar-dark bg-dark">gg</div>
-               
-            </div>
-           
             </div>
         );
     }

@@ -30,15 +30,6 @@
   height: 650px;
 }
 
-.productDescription .footer {
-  height: 50px;
-  position: fixed;
-  left: 0px;
-  bottom: 0px;
-  width: 100%;
-  height: 50px;
-}
-
 .productDescription .descriptionNav {
   position: relative;
   left: 10px;

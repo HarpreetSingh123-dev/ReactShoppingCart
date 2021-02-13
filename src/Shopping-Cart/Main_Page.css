@@ -115,7 +115,7 @@
   background: rgba(0, 0, 0, 0.3);
 }
 
-@media (max-width: 560px) {
+@media (max-width: 580px) {
   .Main_Page .pgset .row {
     display: flex;
     justify-content: center;
