@@ -1,0 +1,11 @@
+.userCart .header {
+  height: 60px;
+}
+
+.userCart .footer {
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+  height: 50px;
+}

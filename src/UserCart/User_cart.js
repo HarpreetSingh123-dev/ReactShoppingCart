@@ -2,11 +2,24 @@ import React, { Component } from 'react';
 import {connect} from 'react-redux'
 import {bindActionCreators} from 'redux'
 
+import './User_cart.css'
+
 import incrementCartProduct from '../Actions/incrementCartProduct'
 import decrementCartProduct from '../Actions/decrementCartProduct'
 import cartTotalCalculator from '../Actions/totalOfCart'
 import clearCartAction from '../Actions/clearCartAction'
 import deleteItemAction from '../Actions/deleteItemAction'
+
+///////////////////////////////////////////////////////////////////////
+
+import incrementTotalCartProducts from '../Actions/TotalProductsInCart/incermentProductsAction'
+import decrementTotalCartProducts from '../Actions/TotalProductsInCart/decrementProductsAction'
+import deleteTotalCartProducts from '../Actions/TotalProductsInCart/deleteProductAction'
+
+
+////////////////////////////////////////////////////////////////////////
+
+import Navbar from '../Navbar/Navbar'
 
 import Cart from './Cart'
 
@@ -30,12 +43,16 @@ class User_cart extends Component {
         const product ={id,name,description,img,price,units}
         this.props.incrementCartProduct(product)
 
+        this.props.incrementTotalCartProducts()
+
     }
 
     decreaseOne(id,name,description,img,price,units){
 
         const product ={id,name,description,img,price,units}
         this.props.decrementCartProduct(product)
+
+        this.props.decrementTotalCartProducts()
     }
 
     clearCart(){
@@ -43,11 +60,15 @@ class User_cart extends Component {
         this.props.clearCartAction()
     }
 
-    deleteItem(id){
+    deleteItem(id,units){
 
       const product ={id}
       this.props.deleteItemAction(product)
+
+      this.props.deleteTotalCartProducts(units)
     }
+
+   
 
     render() {
 
@@ -70,8 +91,8 @@ class User_cart extends Component {
 
         return (
             <div>
-
-
+          <div className="userCart">
+          <div className="header navbar-dark bg-dark"></div>
           <h4>You Have Following products</h4>
 
                   <div className="container">  
@@ -94,6 +115,9 @@ class User_cart extends Component {
 
                    )}
 
+                   {console.log("cart below")}
+                   {console.log(this.props.cart)}
+
                 </div>
                 <div>{a}</div>
                 <div>{b}</div>
@@ -101,6 +125,13 @@ class User_cart extends Component {
                 <div>{d}</div>
                
                 </div>
+
+                
+                
+                    <div className="footer navbar-dark bg-dark">gg</div>
+               
+            </div>
+           
             </div>
         );
     }
@@ -127,7 +158,10 @@ const mapActionsToProps = (dispatch) =>{
         decrementCartProduct,
         cartTotalCalculator,
         clearCartAction,
-        deleteItemAction
+        deleteItemAction,
+        incrementTotalCartProducts,
+        decrementTotalCartProducts,
+        deleteTotalCartProducts
        
          }, dispatch)
     }

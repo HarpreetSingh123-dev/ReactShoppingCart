@@ -11,6 +11,28 @@ img {
   margin-right: 20px;
 }
 
+.Navbar .ff {
+  position: relative;
+}
+.Navbar .dot {
+  position: absolute;
+  left: 20px;
+  top: 0px;
+  border-radius: 40%;
+  height: 21px;
+  width: 18px;
+  color: black;
+  text-align: center;
+  align-items: center;
+  font-weight: 1000;
+  background-color: whitesmoke;
+}
+
+.Navbar .dot span {
+  text-align: center;
+
+  top: 0px;
+}
 @media (min-width: 500px) and (max-width: 900px) {
   .Navbar .navbar-collapse a,
   img {

@@ -10,6 +10,7 @@ function Navbar (props) {
     var a = null
     var b = null
     var c = null
+    var d = null
     
     if(props.iconSet === true){ 
          
@@ -27,6 +28,10 @@ function Navbar (props) {
     else {
       
         b = ( <a class="navbar-brand"><img src={icon1}></img></a>)
+    }
+
+    if(props.number>=1){
+   d=( <span className="dot"> <span>{props.number}</span> </span> )
     }
         return (
             
@@ -67,7 +72,13 @@ function Navbar (props) {
     
                   {c}
       
-                  <Link to="/Cart"><div><img src={icon2}></img></div></Link>
+                  <Link to="/Cart">
+                      
+                      <div className="ff">
+                    
+                      <img src={icon2}></img>
+                      {d}
+                      </div></Link>
                
                  </div>
                 </div>

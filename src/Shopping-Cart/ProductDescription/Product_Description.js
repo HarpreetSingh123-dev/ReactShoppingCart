@@ -15,6 +15,7 @@ import './Product_Description.css'
 // needs to add action 
 
 import addToCartAction from '../../Actions/addToCartAction'
+import incrementCartTotalAction from '../../Actions/TotalProductsInCart/incermentProductsAction'
 
 //var axios = require("axios").default
 
@@ -108,6 +109,7 @@ class Product_Description extends Component {
       const product = {id,name,description,img,price,units}
 
       this.props.addToCartAction(product)
+      this.props.incrementCartTotalAction()
     }
  
     render() {
@@ -278,9 +280,7 @@ class Product_Description extends Component {
           </div>
 
 
-            <footer class="navbar-dark bg-dark">
-              
-              </footer >
+          <div className="footer navbar-dark bg-dark">gg</div>
             </div>
           
             </div>
@@ -307,7 +307,8 @@ const mapActionsToProps =(dispatch) =>{
 
   return bindActionCreators({
 
-    addToCartAction
+    addToCartAction,
+    incrementCartTotalAction
   }, dispatch)
 
 }

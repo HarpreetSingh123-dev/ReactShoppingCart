@@ -43,7 +43,9 @@ class Main_Page extends Component {
             ////////////////////////////////////////  
             
             ///below state is used to impliment hamburger icon of sidebar using conditional rendering//////////////
-            hamIconSet:false
+            hamIconSet:false,
+            
+
         }
         
         this.handleClick = this.handleClick.bind(this);
@@ -68,8 +70,18 @@ class Main_Page extends Component {
              this.setState({list:k})
 
              this.setState({hamIconSet:true})
+
+        
         
     }
+
+//////////////////////////////////////////////////////////////////////////////////////
+
+  componentDidUpdate(){
+
+    
+
+ }
     
 
 //////////////////Below function is used to add product to cart using redux////////////      
@@ -211,8 +223,8 @@ particularProductDescription(id,name,description,img,price,about,subdescription,
 
 }
 
-
-pp(){
+////////////////////// Home navigation button in category section//////////////////////////////////////////////
+toHome(){
   this.setState({cat:false})
 }
 
@@ -405,7 +417,7 @@ pp(){
         s= (
          
             <div class="top_nav_two">   
-               <a style={{color: "blue", fontSize: "17px"}} onClick={this.pp.bind(this)}>HOME</a>
+               <a style={{color: "blue", fontSize: "17px"}} onClick={this.toHome.bind(this)}>HOME</a>
                <span>/</span>
                <span>&nbsp;</span>
                <span style={{fontSize: "17px"}}> {this.state.category}</span>
@@ -420,6 +432,7 @@ pp(){
             <div className="Main_Page">
             <Navbar
             
+            number={this.props.totalProducts}
             iconSet={this.state.hamIconSet}
 
             set={ <Side //clickLowToHigh={this.sortLowToHigh.bind(this)}  /// Passing "side" component as prop to "navigation bar"    
@@ -463,6 +476,16 @@ pp(){
     }
 }
 
+const mapStateToProps = (state) =>{
+
+
+   return {
+       totalProducts:state.totalProducts
+   }
+
+}
+
+
 const mapActionsToProps = (dispatch) =>{
 
     return bindActionCreators({
@@ -475,4 +498,4 @@ const mapActionsToProps = (dispatch) =>{
 
 }
 
-export default connect(null, mapActionsToProps)(Main_Page);  
+export default connect(mapStateToProps, mapActionsToProps)(Main_Page);  
