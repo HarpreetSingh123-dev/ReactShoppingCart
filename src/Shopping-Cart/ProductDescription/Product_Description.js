@@ -283,9 +283,12 @@ class Product_Description extends Component {
           </div>
 
 
-         
+          <footer className="footer">
+           <div className="empty"></div>
+
+           </footer>
             </div>
-           
+          
             </div>
         );
     }
