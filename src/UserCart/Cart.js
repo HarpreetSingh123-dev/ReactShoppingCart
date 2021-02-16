@@ -41,13 +41,13 @@ function Cart(props) {
     </div>*/}
 <div className="row"> 
     
-     <div className="col-lg-4 col-sm-5">
+     <div className="col-lg-4 col-sm-5 col-7">
  
           <img src={props.img}  /*style={{width: 13 +"rem", height :13 +"rem"}}*/ class="card-img-top" alt="..."></img>
 
     </div>
 
-    <div className="col-lg-7 col-sm-7">
+    <div className="col-lg-7 col-sm-7 col-5">
 
                            <h5 >{props.name}</h5>
                            <p>Price: {props.price}&nbsp;CDN$</p>

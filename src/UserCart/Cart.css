@@ -12,10 +12,18 @@
   height: 80%;
 }
 
-@media (max-width: 580px) {
+@media (min-width: 500px) and (max-width: 580px) {
   .cart img {
     /* width: 9 rem;
         height: 9 rem;*/
     width: 90%;
+  }
+}
+
+@media only screen and (max-width: 590px) {
+  .cart img {
+    /* width: 9 rem;
+        height: 9 rem;*/
+    height: 50%;
   }
 }
