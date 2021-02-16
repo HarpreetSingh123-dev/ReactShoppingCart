@@ -94,6 +94,7 @@ export default function cartReducer(state = INITIAL_STATE, action = {}) {
      
       const p = []
 
+      p.length=0
       return p
 
     }

@@ -24,6 +24,14 @@ export default function totalReducer(state = TOTAL, action = {}) {
         return total;
       }
     }
+
+    case "CLEAR_CART":{
+      var total = state
+      total = 0
+      return total
+
+  }
+
   }
 
   return state;

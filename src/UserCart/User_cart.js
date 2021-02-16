@@ -95,8 +95,9 @@ class User_cart extends Component {
          else{
 
             b =(<button >Checkout</button>)
-            c =(<p>Cart Total Is :{this.props.total}Rs</p>)
-            d=(<button onClick={this.clearCart.bind(this)}>Clear cart</button>)
+            c =(<div className="subtotal"><h5>Cart Subtotal &nbsp;</h5>{this.props.total}&nbsp; CDN$</div>)
+            d=(<button type="button" class="btn btn-warning clear" data-toggle="modal" data-target="#clearModal" /*onClick={this.clearCart.bind(this)}*/>Clear cart</button>)
+            e=(<h2 className="text-center">You Have Following Products In Cart</h2>)
           }
 
           
@@ -106,7 +107,9 @@ class User_cart extends Component {
           <div className="header navbar-dark bg-dark"></div>
 
           <div className="container">
-         
+          {e}
+          {c}
+          
 
                 
                    {this.props.cart.map((item)=>
@@ -120,7 +123,7 @@ class User_cart extends Component {
                                                addOneProduct={this.addOne.bind(this)}
                                                 decreaseOneProduct={this.decreaseOne.bind(this)}
                                                  deleteItem={this.deleteItem.bind(this)}
-
+                                                 
                                                    
                              ></Cart>          
 
@@ -130,11 +133,37 @@ class User_cart extends Component {
                    {console.log("cart below")}
                    {console.log(this.props.cart)}
 
+                   <div>{d}</div>
                 </div>
                 <div>{a}</div>
                 <div>{b}</div>
-                <div>{c}</div>
-                <div>{d}</div>
+
+              {/*Modal Triggered when clear cart button is clicked*/}  
+                
+              <div class="modal fade" id="clearModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                   <div class="modal-content">
+
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Are You Sure To Delete All Items In Cart</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                     </div>
+      
+                     
+                    <div class="modal-footer">
+        
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
+                     <button type="button" class="btn btn-primary"  data-dismiss="modal" onClick={this.clearCart.bind(this) }>Yes</button>
+                     </div>
+                    </div>
+                   </div>
+  
+             </div>
+      
+
+               
                
                </div>
                

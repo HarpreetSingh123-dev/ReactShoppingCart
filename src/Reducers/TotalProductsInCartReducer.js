@@ -33,6 +33,13 @@ switch (action.type){
         
     }
 
+    case "CLEAR_CART":{
+        var total = state
+        total = 0
+        return total
+
+    }
+
 }
 
 return state

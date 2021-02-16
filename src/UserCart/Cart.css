@@ -1,5 +1,5 @@
 .cart {
-  margin-top: 50px;
+  margin-top: 5px;
 }
 
 .cart .row {
@@ -30,6 +30,10 @@
         height: 9 rem;*/
     width: 60%;
   }
+
+  .cart .delBtn {
+    margin-top: 10px;
+  }
 }
 
 @media only screen and (max-width: 490px) {
@@ -38,5 +42,9 @@
         height: 9 rem;*/
     height: 50%;
     width: 90%;
+  }
+
+  .cart .delBtn {
+    margin-top: 10px;
   }
 }

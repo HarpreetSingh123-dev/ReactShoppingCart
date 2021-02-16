@@ -5,6 +5,14 @@
 .userCart .text-center {
   margin-top: 30px;
 }
+
+.userCart .subtotal {
+  margin-top: 40px;
+}
+
+.userCart .clear {
+  float: right;
+}
 /*
 .userCart .footer {
   bottom: 0;
