@@ -1,3 +1,11 @@
+.cart {
+  margin-top: 50px;
+}
+
+.cart .row {
+  margin-top: 40px;
+}
+
 .cart img {
   /* width: 9 rem;
   height: 9 rem;*/
@@ -12,18 +20,23 @@
   height: 80%;
 }
 
+.cart .price {
+  margin-top: 10px;
+}
+
 @media (min-width: 500px) and (max-width: 580px) {
   .cart img {
     /* width: 9 rem;
         height: 9 rem;*/
-    width: 90%;
+    width: 60%;
   }
 }
 
-@media only screen and (max-width: 590px) {
+@media only screen and (max-width: 490px) {
   .cart img {
     /* width: 9 rem;
         height: 9 rem;*/
     height: 50%;
+    width: 90%;
   }
 }

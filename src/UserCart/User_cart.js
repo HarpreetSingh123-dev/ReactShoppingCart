@@ -19,10 +19,20 @@ import deleteTotalCartProducts from '../Actions/TotalProductsInCart/deleteProduc
 
 ////////////////////////////////////////////////////////////////////////
 import Cart from './Cart'
+import { prop } from 'ramda';
 
 
 class User_cart extends Component {
 
+    constructor(props){
+
+        super(props)
+
+        this.state={
+
+            
+        }
+    }
 
     componentDidMount(){
 
@@ -59,6 +69,8 @@ class User_cart extends Component {
 
     deleteItem(id,units){
 
+     
+      
       const product ={id}
       this.props.deleteItemAction(product)
 
@@ -73,9 +85,10 @@ class User_cart extends Component {
         let b = null 
         let c = null
         let d = null
+        let e = null
          if(this.props.cart == 0){
      
-           a = "Your Cart Is Empty , Add Something"
+           a = <h1 className="text-center">Opps, Your Shopping Cart Is Empty</h1>
            
          }
 
@@ -86,13 +99,14 @@ class User_cart extends Component {
             d=(<button onClick={this.clearCart.bind(this)}>Clear cart</button>)
           }
 
+          
         return (
             <div>
           <div className="userCart">
           <div className="header navbar-dark bg-dark"></div>
 
           <div className="container">
-          <h4 className="text-center">You Have Following products</h4>
+         
 
                 
                    {this.props.cart.map((item)=>
@@ -121,6 +135,7 @@ class User_cart extends Component {
                 <div>{b}</div>
                 <div>{c}</div>
                 <div>{d}</div>
+               
                </div>
                
             </div>

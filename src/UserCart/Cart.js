@@ -11,7 +11,7 @@ function Cart(props) {
 
 
        <div className="cart">
-
+         <h2 className="text-center">You Have Following Products In Cart</h2>
            {/*<div className="col-lg-4">
 
               <div class="card" style={{width: 18 +"rem"}} >
@@ -52,17 +52,22 @@ function Cart(props) {
                            <h5 >{props.name}</h5>
                            <p>Price: {props.price}&nbsp;CDN$</p>
                            <p>{props.description}</p>
-                           <p>ID:{props.id}</p>
-                           <span>Units : {props.units}</span> 
-
+                         
+                           
+               <div>
                <button onClick={()=>props.addOneProduct(props.id,props.name,props.description,props.img,props.price,props.units)}>+</button>
                
+               <span><b>&nbsp;{props.units}&nbsp;</b></span> 
+               
                <button onClick={()=>props.decreaseOneProduct(props.id,props.name,props.description,props.img,props.price,props.units)}>-</button>
-
-               <button onClick={()=>props.deleteItem(props.id,props.units)}>Delete Item</button>
-
-               <span><p> <b>Price For {props.units}&nbsp; Units: &nbsp;{props.units* props.price} CDN$</b></p> </span>
- 
+               &nbsp;
+               <button onClick={()=>props.deleteItem(props.id,props.units)}> Delete Item</button>
+               
+               </div>  
+                 
+               <div>
+               <p className="price">Price For <b>{props.units}</b>&nbsp; Units: &nbsp;<b>{props.units* props.price} CDN$</b></p>
+            </div>
     </div>
 
 </div>
